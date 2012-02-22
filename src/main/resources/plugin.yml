@@ -1,0 +1,40 @@
+name: LandofLegends
+version: 1.0
+main: net.landoflegends.LandofLegends
+author: [MuisYa, thehutch, tips48]
+dependencies: [Vault, Spout]
+commands:
+    mining:
+        usage: /<command>
+        description: All info about the mining profession.
+    biology:
+        usage: /<command>
+        description: All info about the biology profession
+    fishing:
+        usage: /<command>
+        description: All info about the fishing profession
+    blacksmithing:
+        usage: /<command>
+        description: All info about the repair profession
+        aliases: repair, blacksmith
+    woodcutting:
+        usage: /<command>
+        description: All info about the woodcutting profession
+    stats:
+        usage: /<command>
+        description: All information about youre stats.
+    setlevel:
+        usage: /<command>
+        description: Sets the level of a player.
+    setcanfish:
+        usage: /<command>
+        description: Gives a player the permission to fish.
+    setcanrepair:
+        usage: /<command>
+        description: Gives a player the permission to repair.
+    landoflegends:
+        usage: /<command>
+        description: Returns the Version enabled.
+    kaas:
+        usage: /<command>
+        description: Returns the Version enabled.
