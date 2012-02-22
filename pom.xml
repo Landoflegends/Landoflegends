@@ -4,7 +4,7 @@
 	<groupId>net.landoflegends</groupId>
 	<artifactId>landoflegends2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<description>Guns and More!</description>
+	<description>Skills plugin for LandOfLegends!</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
