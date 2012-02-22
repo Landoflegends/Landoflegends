@@ -3,9 +3,11 @@ package net.landoflegends;
 import java.util.Random;
 import java.util.logging.Level;
 
+import net.landoflegends.listeners.BlockBreakListener;
 import net.landoflegends.professions.ProfessionsManager;
 import net.landoflegends.utils.LOLLogging;
 
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class LandOfLegends extends JavaPlugin {
@@ -20,6 +22,9 @@ public class LandOfLegends extends JavaPlugin {
 
     private ProfessionsManager pManager;
 
+    // Listener
+    private BlockBreakListener blockBreakL;
+
     public void onLoad() {
         logger = new LOLLogging();
 
@@ -31,9 +36,15 @@ public class LandOfLegends extends JavaPlugin {
         logger.start();
 
         pManager = new ProfessionsManager(this);
+
+        blockBreakL = new BlockBreakListener(this);
     }
 
     public void onEnable() {
+        PluginManager pm = getServer().getPluginManager();
+
+        pm.registerEvents(blockBreakL, this);
+
         logger.log(Level.INFO, "Enabled!");
     }
 
