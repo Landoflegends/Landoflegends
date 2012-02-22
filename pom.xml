@@ -14,11 +14,6 @@
 			<url>http://www.gnu.org/licenses/lgpl.html</url>
 		</license>
 	</licenses>
-	<scm>
-		<developerConnection>scm:git:git@github.com:tips48/CallOfMinecraft.git</developerConnection>
-		<connection>scm:git://github.com/tips48/CallOfMinecraft.git</connection>
-		<url>https://github.com/tips48/CallOfMinecraft</url>
-	</scm>
 	<repositories>
 		<repository>
 			<id>spout-repo</id>
@@ -38,7 +33,7 @@
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>1.1-R4-SNAPSHOT</version>
+			<version>1.1-R5-SNAPSHOT</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
